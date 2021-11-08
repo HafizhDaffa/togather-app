@@ -1,0 +1,54 @@
+body{
+    background-color: #523549;
+}
+
+.card{
+    /* background: rgba(76, 175, 80, 0.3); */
+    background-image: linear-gradient(330deg, #903749, #523549);
+    border: solid 1px;
+    border-color: aliceblue;
+    border-radius: 15px;
+}
+
+.card-body{
+    color: white;
+}
+
+.card-title{
+    text-align: center;
+    color: white;
+}
+
+.signup a{
+    color: white;
+    text-decoration: none;
+}
+
+.row{
+    margin-top: 5rem;
+}
+
+.btn{
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #523549;
+    outline: #523549;
+    font-weight: 500;
+}
+
+.btn:hover{
+    color: white;
+    outline:#523549;
+    background-color: #523549;
+}
+.jarak{
+    margin-top: 100px;
+}
+/* ini footer yaa */
+.container2{
+    margin-top: 232px;
+     padding: 30px;
+     background-color: #240040;
+     color: white;
+ }
+

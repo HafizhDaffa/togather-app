@@ -1,0 +1,81 @@
+
+.header{
+    padding: 70px;
+    background: #240040;
+
+}
+
+.text-center{
+    color: white;
+    font-size: 5rem;
+
+}
+
+.header .col-4{
+  
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.col-6{
+    
+    padding: 100px;
+    color: #34283d;
+}
+.judul{
+    font-weight:900;
+    font-size: 5rem;
+}
+
+.judul2{
+    font-weight:900;
+    font-size: 3rem;
+    color: #34283d;
+    text-align: center
+}
+.btn{
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #F4C577;
+    background-color: #F4C577 !important;
+    outline: white;
+    font-weight: 500;
+}
+
+.card{
+    color: white;
+    text-align: center;
+}
+.card-body{
+    background-color: #34283d;
+    border-radius: 0px;
+}
+.gambar{
+    margin-top: 20px;
+}
+.judul3{
+   
+    color: #34283d;
+    text-align:justify;
+}
+/* ini footer yaa */
+.container2{
+    padding: 45px;
+     background-color: #240040;
+     color: white;
+ }
+ .col-3{
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+ .col-8{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.center{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}

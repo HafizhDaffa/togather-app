@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 20px;
+    color: azure;
+}
+nav{
+    background-color:#240040;
+}
+
+.navbar .navbar-nav{
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar .nav-item{
+    margin-left: 50px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+}
+
+.d-grid{
+    margin-left: 280px;
+}
