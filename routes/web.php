@@ -17,12 +17,6 @@ Route::get('/', function () {
     return view('Login.login');
 });
 
-Route::get('/login', function () {
-    return view('Login.login');
-});
-Route::get('/registrasi', function () {
-    return view('Registrasi.registrasi');
-});
 Route::get('/navbar', function () {
     return view('Navbar.navbar');
 });
@@ -31,7 +25,7 @@ Route::get('/kategori', function () {
 });
 Route::get('/home', function () {
     return view('Home.home');
-});
+})->middleware('auth');
 Route::get('/lis', function () {
     return view('Lis.lis');
 });
@@ -56,3 +50,5 @@ Route::get('/editProfil', function () {
 
 
 
+
+require __DIR__ . '/auth.php';
