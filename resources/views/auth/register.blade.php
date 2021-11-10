@@ -16,41 +16,70 @@
                         <h3 class="card-title">Buat akun baru</h3>
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
+
                             <div class="form-group pb-3">
                                 <label for="exampleInputEmail1">Email</label>
                                 <input type="email" class="form-control" id="nama" placeholder="Masukkan Email" name="email">
+                                @error('email')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
+                        
                             </div>
                             <div class="form-group pb-3">
                                 <label for="nama">Nama Lengkap</label>
                                 <input type="text" class="form-control" id="nama" aria-describedby="emailHelp" placeholder="Masukkan Nama" name="nama">
+                                @error('nama')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputEmail1">NIM</label>
                                 <input type="text" class="form-control" id="username" placeholder="Masukkan NIM" name="NIM">
+                                @error('NIM')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Nomor Telepon</label>
                                 <input type="text" class="form-control" placeholder="Masukkan No Telepon" name="telepon">
+                                @error('telepon')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Bidang Keahlian</label>
                                 <input type="text" class="form-control" placeholder="Masukkan Bidang Keahlian" name="keahlian">
+                                @error('keahlian')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Jenis Kelamin</label>
                                 <input type="text" class="form-control" placeholder="Masukkan Jenis Kelamin" name="kelamin">
+                                @error('kelamin')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Angkatan</label>
                                 <input type="number" class="form-control" placeholder="Masukkan Angkatan" name="angkatan">
+                                @error('angkatan')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Program Studi</label>
                                 <input type="text" class="form-control" placeholder="Masukkan Program Studi" name="programstudi">
+                                @error('programstudi')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Password Baru</label>
                                 <input type="password" class="form-control" placeholder="Masukkan Password Baru" name="password">
+                                @error('password')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="signup pb-3">
                                 <div>Sudah punya akun? <a href="{{ url('/') }}">Login disini</a></div>
@@ -64,13 +93,7 @@
             </div>
         </div>
     </div>
-    @if ($errors->any())
-    <div class="mb-4">
-        @foreach ($errors->all() as $error)
-        <div class="text-danger my-2">{{ $error }}</div>
-        @endforeach
-    </div>
-    @endif
+   
     <!-- ini footer yakk -->
     <div class="container2">
         <div class="container">

@@ -18,26 +18,31 @@
                             @csrf
                             <div class="form-group py-3">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email" name="email">
                                 @error('email')
-                                    <div class="text-danger my-2">{{ $message }}</div>
+                                    <div class="text-danger my-2">{{ 'silahkan mengisi email dan password anda' }}</div>
                                 @enderror
                             </div>
-                           
+
                             <div class="form-group pb-1">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password" name="password">
                                 @error('password')
-                                    <div class="text-danger my-2">{{ $message }}</div>
+                                    <div class="text-danger my-2">{{ 'silahkan mengisi email dan password anda' }}</div>
                                 @enderror
                             </div>
                             <div class="signup pb-3">
-                                <div> <br><br>Belum mempunyai akun? <a href="{{ url('/register') }}">Daftar disini</a></div>
+                                <div> <br><br>Belum mempunyai akun? <a href="{{ url('/register') }}">Daftar disini</a>
+                                </div>
                             </div>
                             <div class="col-md-12 text-center py-3">
-                                <button type="submit" class="btn btn-primary btn-light px-4 jarak" role="button">Masuk</button>
+                                <button type="submit" class="btn btn-primary btn-light px-4 jarak"
+                                    role="button">Masuk</button>
                             </div>
                         </form>
+                       
                     </div>
                 </div>
             </div>
