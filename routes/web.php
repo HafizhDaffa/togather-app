@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\lowonganController;
 use Illuminate\Support\Facades\Route;
 use \Illuminate\Support\Facades\DB;
 use App\Http\Controllers\profilController;

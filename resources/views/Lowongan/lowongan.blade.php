@@ -44,7 +44,7 @@
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Anggota yang dibutuhkan</label>
-                            <input type="text" class="form-control" id="username" placeholder="" name="jumlahAnggota" required='required'>
+                            <input type="number" class="form-control" id="username" placeholder="" name="jumlahAnggota" required='required'>
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Link</label>
@@ -54,14 +54,14 @@
                                 <button type="submit" class="btn btn-light px-4" role="button">Submit</button>
                             </div>
                         </form>
-                        {{-- ini kode unutuk cek eror --}}
-                        {{-- @if ($errors->any())
+                        
+                         @if ($errors->any())
                             <div class="mb-4">
                                 @foreach ($errors->all() as $error)
                                     <div class="text-danger my-2">{{ $error }}</div>
                                 @endforeach
                             </div>
-                        @endif --}}
+                        @endif
                     </div>
                 </div>
             </div>
