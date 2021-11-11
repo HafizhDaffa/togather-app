@@ -5,7 +5,7 @@
 <section class="py-5 container-fluid">
     <div class="row">
         <div class="header">
-            <h1 class="text-center">Profil</h1>
+            <h1 class="text-center"> Edit Profil</h1>
             <div class="row justify-content-sm-center">
                 <div class="col-sm-3">
                 </div>

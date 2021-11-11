@@ -17,52 +17,51 @@
             <div class="col-sm-8">
                 <div class="card border-0">
                     <div class="card-body jarak "> 
-                        <form>
+                        <form action="/lowongan" method="POST">
+                            @csrf
                             <div class="form-group pb-3">
                             <label for="exampleInputEmail1">Nama Kelompok</label>
-                            <input type="text" class="form-control" id="nama" placeholder="">
+                            <input type="text" class="form-control" id="nama" placeholder="" name="judul" required='required'>
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputEmail1">Jenis Kelompok</label>
                                 <div class="form-floating">
                                 <label for="floatingSelect" class="tengah">Pilih 1 jenis</label>
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="jenis" required='required'>
                                         <option selected >Pilih jenis kelompok</option>
                                         <option value="1">Proyek</option>
                                         <option value="2">Perlombaan</option>
                                     </select>
                                 </div>
-                            <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama"> -->
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputEmail1">Bidang</label>
-                            <input type="text" class="form-control" id="username" placeholder="">
+                            <input type="text" class="form-control" id="username" placeholder="" name="kategori" required='required'>
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Persyaratan Pendaftaran</label>
-                            <input type="password" class="form-control" id="username" placeholder="">
+                            <input type="text" class="form-control" id="username" placeholder="" name="persyaratan" required='required'>
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Anggota yang dibutuhkan</label>
-                            <input type="password" class="form-control" id="username" placeholder="">
+                            <input type="text" class="form-control" id="username" placeholder="" name="jumlahAnggota" required='required'>
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Link</label>
-                            <input type="password" class="form-control" id="username" placeholder="">
+                            <input type="text" class="form-control" id="username" placeholder="" name="linkKelompok" required='required'>
                             </div>
-                            <!-- <div class="form-group pb-3">
-                            <label for="exampleInputPassword1">Program Studi</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Program Studi">
+                            <div class="col join">
+                                <button type="submit" class="btn btn-light px-4" role="button">Submit</button>
                             </div>
-                            <div class="form-group pb-3">
-                            <label for="exampleInputPassword1">Password Baru</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Password Baru">
-                            </div> -->  
                         </form>
-                        
-                        <div class="col join">
-                            <a class="btn btn-light px-4" href="{{ url('/lowongan2') }}" role="button">Submit</a>
-                        </div>
+                        {{-- ini kode unutuk cek eror --}}
+                        {{-- @if ($errors->any())
+                            <div class="mb-4">
+                                @foreach ($errors->all() as $error)
+                                    <div class="text-danger my-2">{{ $error }}</div>
+                                @endforeach
+                            </div>
+                        @endif --}}
                     </div>
                 </div>
             </div>
