@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top fw-normal">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="http://127.0.0.1:8000/home">
         <img src="aset/logo2.png" alt="" width="170" height="60" class="d-inline-block align-text-top">
         <!-- <h4> TO-GATHER </h4> -->
       </a>

@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use \Illuminate\Support\Facades\DB;
+use App\Http\Controllers\profilController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,13 +42,9 @@ Route::get('/lowongan2', function () {
 Route::get('/edit', function () {
     return view('Lowongan.edit');
 });
-Route::get('/profil', function () {
-    return view('Profil.profil');
-});
-Route::get('/editProfil', function () {
-    return view('Profil.editProfil');
-});
-
+Route::get('/profil', [profilController::class, 'index']);
+Route::get('/editProfil', [profilController::class, 'index2']);
+Route::post('/editProfil', [profilController::class, 'edit']);
 
 
 
