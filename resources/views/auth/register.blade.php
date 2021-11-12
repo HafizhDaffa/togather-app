@@ -49,7 +49,7 @@
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Bidang Keahlian</label>
                                 <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="keahlian">
                                         <option value="">Pilih bidang keahlian</option>
                                         <option value="Software Development">Software Development</option>
                                         <option value="Web Developmet">Web Developmet</option>
@@ -69,7 +69,7 @@
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Jenis Kelamin</label>
                                 <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kelamin">
                                         <option value="">Pilih jenis kelamin</option>
                                         <option value="Laki-laki">Laki-laki</option>
                                         <option value="Perempuan">Perempuan</option>
@@ -91,7 +91,7 @@
                                 <label for="exampleInputPassword1">Program Studi</label>
                                 <div class="form-floating">
                                     
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="programstudi">
                                         <option value="">Pilih program studi</option>
                                         <option value="Teknik Informatika">Teknik Informatika</option>
                                         <option value="Teknik Komputer">Teknik Komputer</option>

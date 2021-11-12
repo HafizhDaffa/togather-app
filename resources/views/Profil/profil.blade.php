@@ -79,6 +79,14 @@
                                             </div>
                                             </div>
                                             <div class="form-group pb-3">
+                                                <label for="exampleInputPassword1">Program Studi</label>
+                                                <div class="card border-0">
+                                                    <div class="card-body field">
+                                                        {{$user->programstudi}}
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            <div class="form-group pb-3">
                                             <label for="exampleInputPassword1">Angkatan</label>
                                             <div class="card border-0">
                                                 <div class="card-body field">
