@@ -72,7 +72,7 @@ Route::get('/profil', [profilController::class, 'index']);
 Route::get('/editProfil', [profilController::class, 'index2']);
 Route::post('/editProfil', [profilController::class, 'edit']);
 Route::post('/lowongan', [lowonganController::class, 'create']);
-Route::get('/edit', [lowonganController::class, 'index2']);
-Route::post('/edit', [lowonganController::class, 'edit']);
+Route::get('/edit/{id}', [lowonganController::class, 'index2']);
+Route::post('/edit/{id}', [lowonganController::class, 'edit']);
 
 require __DIR__ . '/auth.php';

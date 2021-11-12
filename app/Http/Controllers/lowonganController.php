@@ -12,13 +12,13 @@ class lowonganController extends Controller
 
         return view('Lowongan.lowongan2', ['lowongan' => $lowongan]);
     }
-    public function index2(){
-        $form_lowongan = formLowongan::all();
+    public function index2($id){
+        $form_lowongan = formLowongan::find($id);
 
-        return view('Lowongan.edit', ['lowongan' => $form_lowongan]);
+        return view('Lowongan.edit', ['form_lowongan' => $form_lowongan]);
     }
     
-    function edit(Request $request)
+    function edit(Request $request, $id)
     {
         // dd ($request->all());
         $request->validate([
@@ -30,7 +30,7 @@ class lowonganController extends Controller
             'linkKelompok' => ['required', 'string', 'max:255'],
         ]);
 
-        $form_lowongan = formLowongan::find(form_lowongan()->id_lowongan);
+        $form_lowongan = formLowongan::find($id);
 
         $form_lowongan->judul = $request->judul;
         $form_lowongan->jenis = $request->jenis;

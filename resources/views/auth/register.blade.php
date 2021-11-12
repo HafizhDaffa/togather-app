@@ -88,7 +88,9 @@
                                 @enderror
                             </div>
                             <div class="form-group pb-3">
+                                <label for="exampleInputPassword1">Program Studi</label>
                                 <div class="form-floating">
+                                    
                                     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                         <option value="">Pilih program studi</option>
                                         <option value="Teknik Informatika">Teknik Informatika</option>

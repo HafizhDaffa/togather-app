@@ -17,7 +17,7 @@
             <div class="col-sm-8">
                 <div class="card border-0">
                     <div class="card-body jarak "> 
-                    <form action="/edit" method="POST">
+                    <form action="{{ url('/edit/' . $form_lowongan->id) }}" method="POST">
                             @csrf
                             <div class="form-group pb-3">
                             <label for="exampleInputEmail1">Nama Kelompok</label>
@@ -29,10 +29,11 @@
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Jenis Kelompok</label>
                                 <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" value="{{ $form_lowongan->jenis }}" name="jenis">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example"  name="jenis">
                                         <option value="">Pilih jenis kelompok</option>
-                                        <option value="Proyek">Proyek</option>
-                                        <option value="Perlombaan">Perlombaan</option>
+                                        <option value="Proyek" {{ $form_lowongan->jenis== "Proyek"  ? 'selected = selected' : '' }}>Proyek</option>
+                                        <option value="Perlombaan" {{ $form_lowongan->jenis== "Perlombaan"  ? 'selected = selected' : '' }}>Perlombaan</option>
+                                        
                                     </select>
                                     <label class ="tengah" for="floatingSelect">Pilih salah satu jenis kelompok</label>
                                 </div>
@@ -44,16 +45,16 @@
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Bidang</label>
                                 <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" value="{{ $form_lowongan->kategori }}"name="kategori">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kategori">
                                         <option value="">Pilih bidang keahlian</option>
-                                        <option value="Software Development">Software Development</option>
-                                        <option value="Web Developmet">Web Developmet</option>
-                                        <option value="UI/UX Design">UI/UX Design</option>
-                                        <option value="Karya Tulis">Karya Tulis</option>
-                                        <option value="Game Developmet">Game Developmet</option>
-                                        <option value="Data Mining">Data Mining</option>
-                                        <option value="Keamanan Jaringan">Keamanan Jaringan</option>
-                                        <option value="Lainnya">Lainnya</option>
+                                        <option value="Software Development" {{ $form_lowongan->kategori== "Software Development"  ? 'selected = true' : '' }}>Software Development</option>
+                                        <option value="Web Developmet"{{ $form_lowongan->kategori== "Web Developmet"  ? 'selected = selected' : '' }}>Web Developmet</option>
+                                        <option value="UI/UX Design"{{ $form_lowongan->kategori== "UI/UX Design"  ? 'selected = selected' : '' }}>UI/UX Design</option>
+                                        <option value="Karya Tulis"{{ $form_lowongan->kategori== "Karya Tulis"  ? 'selected = selected' : '' }}>Karya Tulis</option>
+                                        <option value="Game Developmet"{{ $form_lowongan->kategori== "Game Developmet"  ? 'selected = selected' : '' }}>Game Developmet</option>
+                                        <option value="Data Mining"{{ $form_lowongan->kategori== "Data Mining" ? 'selected = selected' : '' }}>Data Mining</option>
+                                        <option value="Keamanan Jaringan"{{ $form_lowongan->kategori== "Keamanan Jaringan" ? 'selected = selected' : '' }}>Keamanan Jaringan</option>
+                                        <option value="Lainnya"{{ $form_lowongan->kategori== "Lainnya"  ? 'selected = selected' : '' }}>Lainnya</option>
                                     </select>
                                     <label class ="tengah" for="floatingSelect">Pilih salah satu bidang</label>
                                 </div>
@@ -99,7 +100,7 @@
     <div class="container">
             <div class="row">
                 <div class="col-12 center">
-                    <img src="aset/logo2.png" width="180" height="60" class="logo">
+                    <img src="/aset/logo2.png" width="180" height="60" class="logo">
                 </div>
             </div>
     </div>
