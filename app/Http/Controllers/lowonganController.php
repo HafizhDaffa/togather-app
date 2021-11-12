@@ -12,7 +12,38 @@ class lowonganController extends Controller
 
         return view('Lowongan.lowongan2', ['lowongan' => $lowongan]);
     }
+    public function index2(){
+        $form_lowongan = formLowongan::all();
+
+        return view('Lowongan.edit', ['lowongan' => $form_lowongan]);
+    }
     
+    function edit(Request $request)
+    {
+        // dd ($request->all());
+        $request->validate([
+            'judul' => ['required', 'string', 'max:255'],
+            'jenis' => ['required', 'string', 'max:255'],
+            'persyaratan' => ['required', 'string', 'max:1000'],
+            'kategori' => ['required', 'string', 'max:255'],
+            'jumlahAnggota' => ['required', 'integer'],
+            'linkKelompok' => ['required', 'string', 'max:255'],
+        ]);
+
+        $form_lowongan = formLowongan::find(form_lowongan()->id_lowongan);
+
+        $form_lowongan->judul = $request->judul;
+        $form_lowongan->jenis = $request->jenis;
+        $form_lowongan->persyaratan = $request->persyaratan;
+        $form_lowongan->kategori = $request->kategori;
+        $form_lowongan->jumlahAnggota = $request->jumlahAnggota;
+        $form_lowongan->linkKelompok = $request->linkKelompok;
+
+        $form_lowongan->save();
+
+        return redirect('/lowongan2');
+    }
+
     function create(Request $request)
     {
         // dd ($request->all());
@@ -24,8 +55,6 @@ class lowonganController extends Controller
             'jumlahAnggota' => ['required', 'integer'],
             'linkKelompok' => ['required', 'string', 'max:255'],
         ]);
-        
-
 
         $form_lowongan = new formLowongan();
         $form_lowongan->judul = $request->judul;
@@ -36,18 +65,8 @@ class lowonganController extends Controller
         $form_lowongan->linkKelompok = $request->linkKelompok;
 
         $form_lowongan->save();
-        // function create(Request $request){
-        //     $form_lowongan = new formLowongan;
-
-        //     $form_lowongan->judul = $request->input('judul');
-        //     $form_lowongan->jenis = $request->input('jenis');
-        //     $form_lowongan->persyaratan = $request-input('persyaratan');
-        //     $form_lowongan->kategori = $request->input('kategori');
-        //     $form_lowongan->jumlahKelompok = $request->input('jumlahKelompok');
-        //     $form_lowongan->linkKelompok = $request->input('linkKelompok');
-
-        //     $form_lowongan->save();
 
         return redirect('/lowongan2');
     }
+    
 }
