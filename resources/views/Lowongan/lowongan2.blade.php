@@ -15,13 +15,17 @@
     <div class="container">
     <div class="row">
         <div class="col-md-12 p-5">
-            <div class="card border-0">
-                <div class="card-body">
-                <h3 class="card-title">Software Development</h3>
-                <p class="card-text">Proyek</p>
-                <a href="{{ url('/edit') }}" class="btn btn-primary ukuran">Edit Kategori</a>
+            <?php foreach ($lowongan as $lowongan) : ?>
+                <div class="card border-0">
+                    <div class="card-body">
+                    <h3 class="card-title"><?php echo  $lowongan->judul ?></h3>
+                    <p class="card-text"><?php echo  $lowongan->jenis?></p>
+                    <a href="{{ url('/edit') }}" class="btn btn-primary ukuran">Hapus Kategori</a>
+                    <a href="{{ url('/') }}" class="btn btn-primary ukuran ukuranedit">Edit Kategori</a>
+                    </div>
                 </div>
-            </div>
+            <br>
+            <?php endforeach ?>
             <div class="card border-0">
                 <div class="card-body jarak ">
                 <a href="{{ url('/lowongan') }}" class="btn btn-primary center">Buat Lowongan Baru</a>
@@ -30,6 +34,7 @@
         </div>             
 </div>
 </section>
+
 <!-- ini footer yaaa -->
 <div class ="container2">
     <div class="container">

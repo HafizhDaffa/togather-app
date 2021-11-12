@@ -7,7 +7,12 @@ use Illuminate\Http\Request;
 
 class lowonganController extends Controller
 {
+    public function index(){
+        $lowongan = formLowongan::all();
 
+        return view('Lowongan.lowongan2', ['lowongan' => $lowongan]);
+    }
+    
     function create(Request $request)
     {
         // dd ($request->all());
@@ -19,6 +24,7 @@ class lowonganController extends Controller
             'jumlahAnggota' => ['required', 'integer'],
             'linkKelompok' => ['required', 'string', 'max:255'],
         ]);
+        
 
 
         $form_lowongan = new formLowongan();

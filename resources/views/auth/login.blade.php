@@ -34,7 +34,7 @@
                                 @enderror
                             </div>
                             <div class="signup pb-3">
-                                <div> <br><br>Belum mempunyai akun? <a href="{{ url('/register') }}">Daftar disini</a>
+                                <div> <br><br>Belum mempunyai akun? <a href="{{ url('/register') }}"> <b>Daftar disini</b></a>
                                 </div>
                             </div>
                             <div class="col-md-12 text-center py-3">

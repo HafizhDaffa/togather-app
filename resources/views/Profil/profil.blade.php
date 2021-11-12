@@ -3,6 +3,7 @@
     <title>Profil</title>
 
     <link rel="stylesheet" href="{{ asset('css/kelompok.css') }}">
+    <link rel="shortcut icon" href="{{ URL::to('/aset/logo.png') }}" />
     <section class="py-5 container-fluid">
     <div class="row">
             <div class="header">
@@ -15,6 +16,9 @@
         </div>
         
                     <div class="container">
+                        <div class="col join">
+                            <a class="btn btn-primary" href="{{ url('/pengguna') }}" role="button">Daftar Pengguna</a>
+                        </div>
                         <div class="row justify-content-sm-center">
                             <div class="col-sm-8">
                                 <div class="card border-0">

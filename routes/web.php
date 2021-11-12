@@ -31,6 +31,27 @@ Route::get('/home', function () {
 Route::get('/lis', function () {
     return view('Lis.lis');
 });
+Route::get('/lis1', function () {
+    return view('Lis.lis1');
+});
+Route::get('/lis2', function () {
+    return view('Lis.lis2');
+});
+Route::get('/lis3', function () {
+    return view('Lis.lis3');
+});
+Route::get('/lis4', function () {
+    return view('Lis.lis4');
+});
+Route::get('/lis5', function () {
+    return view('Lis.lis5');
+});
+Route::get('/lis6', function () {
+    return view('Lis.lis6');
+});
+Route::get('/lis7', function () {
+    return view('Lis.lis7');
+});
 Route::get('/kelompok', function () {
     return view('Kelompok.kelompok');
 });
@@ -42,6 +63,10 @@ Route::get('/lowongan2', function () {
 });
 Route::get('/edit', function () {
     return view('Lowongan.edit');
+});
+Route::get('/lowongan2', [lowonganController::class, 'index']);
+Route::get('/pengguna', function () {
+    return view('Pengguna.pengguna');
 });
 Route::get('/profil', [profilController::class, 'index']);
 Route::get('/editProfil', [profilController::class, 'index2']);

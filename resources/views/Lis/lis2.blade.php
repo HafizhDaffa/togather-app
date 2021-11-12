@@ -18,18 +18,18 @@
         <div class="col-md-12 p-5">
             <div class="card border-0">
                 <div class="card-body batas">
-                <h3 class="card-title">Software Development</h3>
+                <h3 class="card-title">UI/UX Design</h3>
                 </div>
                 <div class="card-body jarak">
                 <h3 class="card-title">TIM Sukses</h3>
                 <p class="card-text">Proyek</p>
-                <p class="card-text">Software Development</p>
+                <p class="card-text">UI/UX Design</p>
                 <a href="{{ url('/kelompok') }}" class="btn btn-primary">Buka Kelompok</a>
                 </div>
                 <div class="card-body jarak">
                 <h3 class="card-title">TIM Hore</h3>
                 <p class="card-text">Perlombaan</p>
-                <p class="card-text">Software Development</p>
+                <p class="card-text">UI/UX Design</p>
                 <a href="{{ url('/kelompok') }}" class="btn btn-primary">Buka Kelompok</a>
                 </div>
             </div>    

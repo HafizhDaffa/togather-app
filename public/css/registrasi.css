@@ -41,6 +41,12 @@ body{
     outline:#523549;
     background-color: #523549;
 }
+
+.tengah{
+    color: #6b6b6b;
+    font-size: 10px;
+}
+
 /* ini footer yaa */
 .container2{
     margin-top: 40px;
@@ -48,3 +54,5 @@ body{
      background-color: #240040;
      color: white;
  }
+
+ 

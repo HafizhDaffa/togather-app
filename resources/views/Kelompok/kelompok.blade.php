@@ -67,15 +67,7 @@
                                         </div>
                                         <!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Jenis Kelamin"> -->
                                         </div>
-                                        <div class="form-group pb-3">
-                                        <label for="exampleInputPassword1">Link</label>
-                                        <div class="card border-0">
-                                            <div class="card-body field">
-                                             Contact Person : 08979797999 (Daffa)
-                                            </div>
-                                        </div>
-                                        <!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Angkatan"> -->
-                                        </div>
+
                                         <!-- <div class="form-group pb-3">
                                         <label for="exampleInputPassword1">Program Studi</label>
                                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Program Studi">

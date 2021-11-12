@@ -48,28 +48,57 @@
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Bidang Keahlian</label>
-                                <input type="text" class="form-control" placeholder="Masukkan Bidang Keahlian" name="keahlian">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                        <option value="">Pilih bidang keahlian</option>
+                                        <option value="Software Development">Software Development</option>
+                                        <option value="Web Developmet">Web Developmet</option>
+                                        <option value="UI/UX Design">UI/UX Design</option>
+                                        <option value="Karya Tulis">Karya Tulis</option>
+                                        <option value="Game Developmet">Game Developmet</option>
+                                        <option value="Data Mining">Data Mining</option>
+                                        <option value="Keamanan Jaringan">Keamanan Jaringan</option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                    <label class ="tengah" for="floatingSelect">Pilih salah satu bidang</label>
+                                </div>
                                 @error('keahlian')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror
                             </div>
                             <div class="form-group pb-3">
-                                <label for="exampleInputPassword1">Jenis Kelamin</label>
-                                <input type="text" class="form-control" placeholder="Masukkan Jenis Kelamin" name="kelamin">
+                            <label for="exampleInputPassword1">Jenis Kelamin</label>
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                        <option value="">Pilih jenis kelamin</option>
+                                        <option value="Laki-laki">Laki-laki</option>
+                                        <option value="Perempuan">Perempuan</option>
+                                    </select>
+                                    <label class ="tengah" for="floatingSelect">Pilih salah satu jenis kelamin</label>
+                                </div>
                                 @error('kelamin')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Angkatan</label>
-                                <input type="number" class="form-control" placeholder="Masukkan Angkatan" name="angkatan">
+                                <input type="text" class="form-control" placeholder="Masukkan Angkatan" name="angkatan">
                                 @error('angkatan')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror
                             </div>
                             <div class="form-group pb-3">
-                                <label for="exampleInputPassword1">Program Studi</label>
-                                <input type="text" class="form-control" placeholder="Masukkan Program Studi" name="programstudi">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                        <option value="">Pilih program studi</option>
+                                        <option value="Teknik Informatika">Teknik Informatika</option>
+                                        <option value="Teknik Komputer">Teknik Komputer</option>
+                                        <option value="Sistem Informasi">Sistem Informasi</option>
+                                        <option value="Teknologi Informasi">Teknologi Informasi</option>
+                                        <option value="Pendidikan Teknologi Informasi">Pendidikan Teknologi Informasi</option>
+                                    </select>
+                                    <label class ="tengah" for="floatingSelect">Pilih salah satu program studi</label>
+                                </div>
                                 @error('programstudi')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror

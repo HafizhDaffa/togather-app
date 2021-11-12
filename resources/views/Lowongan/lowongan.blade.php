@@ -2,6 +2,7 @@
 
 <title>Buat Lowongan</title>
 <link rel="stylesheet" href="{{ asset('css/lowongan.css') }}">
+<link rel="shortcut icon" href="{{ URL::to('/aset/logo.png') }}" />
 <section class="py-5 container-fluid">
     <div class="row">
         <div class="header">
@@ -21,47 +22,72 @@
                             @csrf
                             <div class="form-group pb-3">
                             <label for="exampleInputEmail1">Nama Kelompok</label>
-                            <input type="text" class="form-control" id="nama" placeholder="" name="judul" required='required'>
+                            <input type="text" class="form-control" id="nama" placeholder="" name="judul">
+                            @error('judul')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
-                            <label for="exampleInputEmail1">Jenis Kelompok</label>
+                            <label for="exampleInputPassword1">Jenis Kelompok</label>
                                 <div class="form-floating">
-                                <label for="floatingSelect" class="tengah">Pilih 1 jenis</label>
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="jenis" required='required'>
-                                        <option selected >Pilih jenis kelompok</option>
-                                        <option value="1">Proyek</option>
-                                        <option value="2">Perlombaan</option>
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="jenis">
+                                        <option value="">Pilih jenis kelompok</option>
+                                        <option value="Proyek">Proyek</option>
+                                        <option value="Perlombaan">Perlombaan</option>
                                     </select>
+                                    <label class ="tengah" for="floatingSelect">Pilih salah satu jenis kelompok</label>
                                 </div>
+                                @error('jenis')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
+
                             <div class="form-group pb-3">
-                            <label for="exampleInputEmail1">Bidang</label>
-                            <input type="text" class="form-control" id="username" placeholder="" name="kategori" required='required'>
+                                <label for="exampleInputPassword1">Bidang</label>
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kategori">
+                                        <option value="">Pilih bidang keahlian</option>
+                                        <option value="Software Development">Software Development</option>
+                                        <option value="Web Developmet">Web Developmet</option>
+                                        <option value="UI/UX Design">UI/UX Design</option>
+                                        <option value="Karya Tulis">Karya Tulis</option>
+                                        <option value="Game Developmet">Game Developmet</option>
+                                        <option value="Data Mining">Data Mining</option>
+                                        <option value="Keamanan Jaringan">Keamanan Jaringan</option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                    <label class ="tengah" for="floatingSelect">Pilih salah satu bidang</label>
+                                </div>
+                                @error('kategori')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
+
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Persyaratan Pendaftaran</label>
-                            <input type="text" class="form-control" id="username" placeholder="" name="persyaratan" required='required'>
+                            <input type="text" class="form-control" id="username" placeholder="" name="persyaratan">
+                            @error('persyaratan')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Anggota yang dibutuhkan</label>
-                            <input type="number" class="form-control" id="username" placeholder="" name="jumlahAnggota" required='required'>
+                            <input type="number" class="form-control" id="username" placeholder="" name="jumlahAnggota">
+                            @error('jumlahAnggota')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Link</label>
-                            <input type="text" class="form-control" id="username" placeholder="" name="linkKelompok" required='required'>
+                            <input type="text" class="form-control" id="username" placeholder="" name="linkKelompok">
+                            @error('linkKelompok')
+                                    <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
+                                @enderror
                             </div>
                             <div class="col join">
                                 <button type="submit" class="btn btn-light px-4" role="button">Submit</button>
                             </div>
                         </form>
-                        
-                         @if ($errors->any())
-                            <div class="mb-4">
-                                @foreach ($errors->all() as $error)
-                                    <div class="text-danger my-2">{{ $error }}</div>
-                                @endforeach
-                            </div>
-                        @endif
                     </div>
                 </div>
             </div>

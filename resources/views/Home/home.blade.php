@@ -25,7 +25,7 @@
                 <img src="aset/kategori.svg" alt="" width="300" height="200" class="d-inline-block align-text-top gambar center">
                     <div class="card-body">
                     <h5 class="card-title">Kategori</h5>
-                    <p class="card-text"> Terdapat beberapa bidang kategori yang akan To-gather buka, pengguna dapat mencari lowongan sesuai dengan minat yang dimiliki.</p>
+                    <p class="card-text"> Terdapat beberapa kategori yang telah disediakan, anda dapat mencari kelompok sesuai dengan minat.</p>
                     <div class="col-md-12 text-center py-3">
                                 <a class="btn px-4 border-0" href="{{ url('/kategori') }}" role="button">Kategori</a>
                             </div>

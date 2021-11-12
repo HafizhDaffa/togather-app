@@ -19,18 +19,35 @@
             <div class="card border-0">
                 <div class="card-body">
                 <h3 class="card-title">Software Development</h3>
-                <p class="card-text">Proyek</p>
                 <a href="{{ url('/lis') }}" class="btn btn-primary ukuran">Buka Kategori</a>
                 </div>
                 <div class="card-body jarak">
-                <h3 class="card-title">UI/UX DESIGN</h3>
-                <p class="card-text">Perlombaan</p>
-                <a href="{{ url('/lis') }}" class="btn btn-primary">Buka Kategori</a>
+                <h3 class="card-title">Web Development</h3>
+                <a href="{{ url('/lis1') }}" class="btn btn-primary">Buka Kategori</a>
                 </div>
                 <div class="card-body jarak">
-                <h3 class="card-title">Cyber Security</h3>
-                <p class="card-text">Proyek</p>
-                <a href="{{ url('/lis') }}" class="btn btn-primary">Buka Kategori</a>
+                <h3 class="card-title">UI/UX Design</h3>
+                <a href="{{ url('/lis2') }}" class="btn btn-primary">Buka Kategori</a>
+                </div>
+                <div class="card-body jarak">
+                <h3 class="card-title">Karya Tulis</h3>
+                <a href="{{ url('/lis3') }}" class="btn btn-primary ukuran">Buka Kategori</a>
+                </div>
+                <div class="card-body jarak">
+                <h3 class="card-title">Game Developmet</h3>
+                <a href="{{ url('/lis4') }}" class="btn btn-primary ukuran">Buka Kategori</a>
+                </div>
+                <div class="card-body jarak">
+                <h3 class="card-title">Data Mining</h3>
+                <a href="{{ url('/lis5') }}" class="btn btn-primary ukuran">Buka Kategori</a>
+                </div>
+                <div class="card-body jarak">
+                <h3 class="card-title">Keamanan Jaringan</h3>
+                <a href="{{ url('/lis6') }}" class="btn btn-primary ukuran">Buka Kategori</a>
+                </div>
+                <div class="card-body jarak">
+                <h3 class="card-title">Lainnya</h3>
+                <a href="{{ url('/lis7') }}" class="btn btn-primary ukuran">Buka Kategori</a>
                 </div>
             </div>    
         </div>        
