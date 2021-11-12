@@ -17,6 +17,14 @@ class lowonganController extends Controller
 
         return view('Lowongan.edit', ['form_lowongan' => $form_lowongan]);
     }
+
+    public function hapus($id)
+    {
+        // menghapus data pegawai berdasarkan id yang dipilih
+        $form_lowongan = formLowongan::find($id)->delete();
+
+        return redirect('/lowongan2');
+    }
     
     function edit(Request $request, $id)
     {

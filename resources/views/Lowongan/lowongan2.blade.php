@@ -20,7 +20,7 @@
                     <div class="card-body">
                     <h3 class="card-title"><?php echo  $lowongan->judul ?></h3>
                     <p class="card-text"><?php echo  $lowongan->jenis?></p>
-                    <a href="{{ url('/edit') }}" class="btn btn-primary ukuran">Hapus Kategori</a>
+                    <a href="/hapuslowongan/{{ $lowongan->id }}" class="btn btn-primary ukuran">Hapus Kategori</a>
                     <a href="{{ url('/edit/' . $lowongan->id) }}" class="btn btn-primary ukuran ukuranedit">Edit Kategori</a>
                     </div>
                 </div>
