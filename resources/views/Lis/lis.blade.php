@@ -25,7 +25,7 @@
                             <h3 class="card-title">{{ $kelompok->judul }}</h3>
                             <p class="card-text">{{ $kelompok->jenis }}</p>
                             <p class="card-text">{{ $kelompok->kategori }}</p>
-                            <a href="{{ url('/kelompok') }}" class="btn btn-primary">Buka Kelompok</a>
+                            <a href="{{ url('/kelompok/'.$kelompok->id) }}" class="btn btn-primary">Buka Kelompok</a>
                         </div>
                     @empty
                         <h3 class="text-center text-dark font-sm h3 py-4">Tidak ada data</h3>

@@ -27,30 +27,8 @@ Route::get('/home', function () {
     return view('Home.home');
 })->middleware('auth');
 Route::get('/lis/{kategori}',[lowonganController::class, 'tampilkan_kategori'])->where('kategori', '.*');;
-Route::get('/lis1', function () {
-    return view('Lis.lis1');
-});
-Route::get('/lis2', function () {
-    return view('Lis.lis2');
-});
-Route::get('/lis3', function () {
-    return view('Lis.lis3');
-});
-Route::get('/lis4', function () {
-    return view('Lis.lis4');
-});
-Route::get('/lis5', function () {
-    return view('Lis.lis5');
-});
-Route::get('/lis6', function () {
-    return view('Lis.lis6');
-});
-Route::get('/lis7', function () {
-    return view('Lis.lis7');
-});
-Route::get('/kelompok', function () {
-    return view('Kelompok.kelompok');
-});
+
+
 Route::get('/lowongan', function () {
     return view('Lowongan.lowongan');
 });
@@ -75,5 +53,7 @@ Route::get('/lowongan', [lowonganController::class, 'index']);
 Route::get('/lowongan2', [lowonganController::class, 'test']);
 Route::get('/cabanglowongan', [lowonganController::class, 'test']);
 Route::get('/kategori', [lowonganController::class, 'kategori']);
+Route::get('/kelompok/{id}', [lowonganController::class, 'tampilkan_kelompok']);
+
 
 require __DIR__ . '/auth.php';

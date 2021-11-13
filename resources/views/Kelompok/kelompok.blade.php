@@ -8,9 +8,9 @@
         <div class="col-md-12 p-5">
             <div class="card border-0">
                 <div class="card-body batas">
-                <h3 class="card-title">Software Development</h3>
-                <p class="card-text">Proyek</p>
-                <h4 class="card-text">TIM Sukses</h4>
+                <h3 class="card-title">{{$kelompok->kategori}}</h3>
+                <p class="card-text">{{$kelompok->jenis}}</p>
+                <h4 class="card-text">{{$kelompok->judul}}</h4>
                 </div>
                 
                 <div class="container">
@@ -23,7 +23,7 @@
                                         <label for="exampleInputEmail1">Nama Kelompok</label>
                                         <div class="card border-0">
                                             <div class="card-body field">
-                                                TIM Sukses
+                                                {{$kelompok->judul}}
                                             </div>
                                         </div>
                                         <!-- <input type="text" class="form-control" id="nama" placeholder="Masukkan Email"> -->
@@ -32,7 +32,7 @@
                                         <label for="exampleInputEmail1">Jenis Kelompok</label>
                                         <div class="card border-0">
                                             <div class="card-body field">
-                                                Software Development
+                                                {{$kelompok->jenis}}
                                             </div>
                                         </div>
                                         <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama"> -->
@@ -41,7 +41,7 @@
                                         <label for="exampleInputEmail1">Bidang</label>
                                         <div class="card border-0">
                                             <div class="card-body field">
-                                                Proyek
+                                                {{$kelompok->kategori}}
                                             </div>
                                         </div>
                                         <!-- <input type="text" class="form-control" id="username" placeholder="Masukkan NIM"> -->
@@ -50,9 +50,7 @@
                                         <label for="exampleInputPassword1">Persyaratan Pendaftaran</label>
                                         <div class="card border-0">
                                             <div class="card-body field">
-                                                1. Memiliki kemampuan dalam berpikir cepat. <br>
-                                                2. Memiliki skill dalam menggunakan bahasa kotlin. <br>
-                                                3. Memiliki kemampuan yang tinggi.
+                                                {{$kelompok->persyaratan}}
                                             </div>
                                         </div>
                                         <!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan No Telepon"> -->
@@ -62,7 +60,7 @@
                                         <label for="exampleInputPassword1">Anggota yang dibutuhkan</label>
                                         <div class="card border-0">
                                             <div class="card-body field">
-                                                5 Orang
+                                                {{$kelompok->jumlahAnggota}} orang
                                             </div>
                                         </div>
                                         <!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Jenis Kelamin"> -->
@@ -79,7 +77,7 @@
                                         
                                     </form>
                                     <div class="col join">
-                                        <a class="btn btn-light px-4" type="button" href="{{ url('/home') }}">Join</a>
+                                        <a target="_blank" class="btn btn-light px-4" type="button" href={{str_starts_with($kelompok->linkKelompok, "https")? $kelompok->linkKelompok:"https://".$kelompok->linkKelompok}}>Join</a>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +93,7 @@
     <div class="container">
             <div class="row">
                 <div class="col-12 center">
-                    <img src="aset/logo2.png" width="180" height="60" class="logo">
+                    <img src="/aset/logo2.png" width="180" height="60" class="logo">
                 </div>
             </div>
     </div>

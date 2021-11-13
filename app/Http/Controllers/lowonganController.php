@@ -116,4 +116,10 @@ class lowonganController extends Controller
         $daftar_kelompok = formLowongan::where('kategori', $kategori)->get();
         return view('Lis.lis', ['daftar_kelompok' => $daftar_kelompok, 'kategori' => $kategori]);
     }
+
+    public function tampilkan_kelompok($id)
+    {
+        $kelompok = formLowongan::find($id);
+        return view('Kelompok.kelompok',["kelompok"=>$kelompok]);
+    }
 }
