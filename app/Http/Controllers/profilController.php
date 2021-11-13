@@ -44,4 +44,9 @@ class profilController extends Controller
         return redirect('/profil');
 
     }
+
+    public function tampil(){
+        $user = User::all();
+        return view('Pengguna.pengguna', ['user'=> $user]);
+    }
 }
