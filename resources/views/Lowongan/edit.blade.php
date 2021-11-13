@@ -85,7 +85,7 @@
                                 @enderror
                             </div>
                             <div class="col join">
-                                <button type="submit" class="btn btn-light px-4" role="button">Submit</button>
+                                <button type="submit" class="btn btn-light px-4" role="button">Simpan</button>
                             </div>
                         </form>                        
                     </div>
