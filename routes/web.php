@@ -22,15 +22,11 @@ Route::get('/', function () {
 Route::get('/navbar', function () {
     return view('Navbar.navbar');
 });
-Route::get('/kategori', function () {
-    return view('Kategori.kategori');
-});
+
 Route::get('/home', function () {
     return view('Home.home');
 })->middleware('auth');
-Route::get('/lis', function () {
-    return view('Lis.lis');
-});
+Route::get('/lis/{kategori}',[lowonganController::class, 'tampilkan_kategori'])->where('kategori', '.*');;
 Route::get('/lis1', function () {
     return view('Lis.lis1');
 });
@@ -78,4 +74,6 @@ Route::get('/hapuslowongan/{Id}', [lowonganController::class, 'hapus']);
 Route::get('/lowongan', [lowonganController::class, 'index']);
 Route::get('/lowongan2', [lowonganController::class, 'test']);
 Route::get('/cabanglowongan', [lowonganController::class, 'test']);
+Route::get('/kategori', [lowonganController::class, 'kategori']);
+
 require __DIR__ . '/auth.php';

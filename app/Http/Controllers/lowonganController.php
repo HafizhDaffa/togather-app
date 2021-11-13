@@ -7,22 +7,20 @@ use Illuminate\Http\Request;
 
 class lowonganController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $lowongan = formLowongan::all();
 
         return view('Lowongan.lowongan', ['lowongan' => $lowongan]);
     }
-    public function index2($id){
+    public function index2($id)
+    {
         $form_lowongan = formLowongan::find($id);
 
         return view('Lowongan.edit', ['form_lowongan' => $form_lowongan]);
     }
 
-    public function index3($id){
-        $lowongan = formLowongan::all();
 
-        return view('Lowongan.lowongan2', ['lowongan' => $lowongan]);
-    }
 
     public function hapus($id)
     {
@@ -31,7 +29,7 @@ class lowonganController extends Controller
 
         return redirect('/lowongan2');
     }
-    
+
     function edit(Request $request, $id)
     {
         // dd ($request->all());
@@ -83,13 +81,39 @@ class lowonganController extends Controller
         return redirect('/lowongan2');
     }
 
-    public function test(){
+    public function test()
+    {
         $lowongan = formLowongan::all();
-        if($lowongan->isEmpty()) {  
+        if ($lowongan->isEmpty()) {
             return view('Lowongan.lowongan');
         } else {
-            return view('Lowongan.lowongan2',['lowongan'=>$lowongan]);    
+            return view('Lowongan.lowongan2', ['lowongan' => $lowongan]);
         }
     }
-    
+
+    public function kategori()
+    {
+        $total_kategori = formLowongan::groupBy('kategori')->selectRaw('count(*) as total, kategori')->get()->toArray();
+        $arr = [
+            "Software Development" => 0,
+            "Web Development" => 0,
+            "UI/UX Design" => 0,
+            "Karya Tulis" => 0,
+            "Game Development" => 0,
+            "Data Mining" => 0,
+            "Keamanan Jaringan" => 0,
+            "Lainnya" => 0,
+        ];
+
+        foreach ($total_kategori as $total) {
+            $arr[$total['kategori']] = $total['total'];
+        }
+
+        return view('Kategori.kategori', ['total_kategori' => $arr]);
+    }
+    public function tampilkan_kategori($kategori)
+    {
+        $daftar_kelompok = formLowongan::where('kategori', $kategori)->get();
+        return view('Lis.lis', ['daftar_kelompok' => $daftar_kelompok, 'kategori' => $kategori]);
+    }
 }

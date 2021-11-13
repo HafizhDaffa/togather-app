@@ -32,7 +32,7 @@
                 </div>
             </div>  
         </div>             
-</div>
+</div></div>
 </section>
 
 <!-- ini footer yaaa -->

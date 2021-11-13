@@ -12,38 +12,36 @@
             </div>
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 p-5">
-            <div class="card border-0">
-                <div class="card-body batas">
-                <h3 class="card-title">Software Development</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-5">
+                <div class="card border-0">
+                    <div class="card-body batas">
+                        <h3 class="card-title">{{ $kategori }}</h3>
+                    </div>
+                    @forelse ($daftar_kelompok as $kelompok)
+                        <div class="card-body jarak">
+                            <h3 class="card-title">{{ $kelompok->judul }}</h3>
+                            <p class="card-text">{{ $kelompok->jenis }}</p>
+                            <p class="card-text">{{ $kelompok->kategori }}</p>
+                            <a href="{{ url('/kelompok') }}" class="btn btn-primary">Buka Kelompok</a>
+                        </div>
+                    @empty
+                        <h3 class="text-center text-dark font-sm h3 py-4">Tidak ada data</h3>
+                    @endforelse
                 </div>
-                <div class="card-body jarak">
-                <h3 class="card-title">TIM Sukses</h3>
-                <p class="card-text">Proyek</p>
-                <p class="card-text">Software Development</p>
-                <a href="{{ url('/kelompok') }}" class="btn btn-primary">Buka Kelompok</a>
-                </div>
-                <div class="card-body jarak">
-                <h3 class="card-title">TIM Hore</h3>
-                <p class="card-text">Perlombaan</p>
-                <p class="card-text">Software Development</p>
-                <a href="{{ url('/kelompok') }}" class="btn btn-primary">Buka Kelompok</a>
-                </div>
-            </div>    
-        </div>    
-</div>
+            </div>
+        </div>
 </section>
 <!-- ini footer yaaa -->
 <!-- ini footer yaaa -->
-<div class ="container2">
+<div class="container2">
     <div class="container">
-            <div class="row">
-                <div class="col-12 center">
-                    <img src="aset/logo2.png" width="180" height="60" class="logo">
-                </div>
+        <div class="row">
+            <div class="col-12 center">
+                <img src="/aset/logo2.png" width="180" height="60" class="logo">
             </div>
+        </div>
     </div>
 </div>
