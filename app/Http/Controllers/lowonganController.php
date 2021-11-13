@@ -10,12 +10,18 @@ class lowonganController extends Controller
     public function index(){
         $lowongan = formLowongan::all();
 
-        return view('Lowongan.lowongan2', ['lowongan' => $lowongan]);
+        return view('Lowongan.lowongan', ['lowongan' => $lowongan]);
     }
     public function index2($id){
         $form_lowongan = formLowongan::find($id);
 
         return view('Lowongan.edit', ['form_lowongan' => $form_lowongan]);
+    }
+
+    public function index3($id){
+        $lowongan = formLowongan::all();
+
+        return view('Lowongan.lowongan2', ['lowongan' => $lowongan]);
     }
 
     public function hapus($id)
@@ -82,7 +88,6 @@ class lowonganController extends Controller
         if($lowongan->isEmpty()) {  
             return view('Lowongan.lowongan');
         } else {
-            // echo "\n \n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nedit";
             return view('Lowongan.lowongan2',['lowongan'=>$lowongan]);    
         }
     }

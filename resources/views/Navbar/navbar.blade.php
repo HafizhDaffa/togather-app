@@ -33,7 +33,7 @@
             <a class="nav-link" href="{{ url('/kategori') }}">Kategori</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('/lowongan') }}">Buat Lowongan</a>
+            <a class="nav-link" href="{{ url('/cabanglowongan') }}">Buat Lowongan</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url('/profil') }}">Profil</a>
