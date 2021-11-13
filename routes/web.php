@@ -75,5 +75,5 @@ Route::post('/lowongan', [lowonganController::class, 'create']);
 Route::get('/edit/{id}', [lowonganController::class, 'index2']);
 Route::post('/edit/{id}', [lowonganController::class, 'edit']);
 Route::get('/hapuslowongan/{Id}', [lowonganController::class, 'hapus']);
-
+Route::get('/lowongan', [lowonganController::class, 'test']);
 require __DIR__ . '/auth.php';

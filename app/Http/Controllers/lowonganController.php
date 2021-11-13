@@ -76,5 +76,15 @@ class lowonganController extends Controller
 
         return redirect('/lowongan2');
     }
+
+    public function test(){
+        $lowongan = formLowongan::all();
+        if($lowongan->isEmpty()) {  
+            return view('Lowongan.lowongan');
+        } else {
+            // echo "\n \n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nedit";
+            return view('Lowongan.lowongan2',['lowongan'=>$lowongan]);    
+        }
+    }
     
 }
