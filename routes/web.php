@@ -55,5 +55,6 @@ Route::get('/cabanglowongan', [lowonganController::class, 'test']);
 Route::get('/kategori', [lowonganController::class, 'kategori']);
 Route::get('/kelompok/{id}', [lowonganController::class, 'tampilkan_kelompok']);
 Route::get('/pengguna', [profilController::class, 'tampil']);
+Route::get('/search', [profilController::class, 'search']);
 
 require __DIR__ . '/auth.php';

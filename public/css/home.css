@@ -1,4 +1,6 @@
-
+/* *{
+    border-style:solid;
+} */
 .header{
     padding: 70px;
     background: #240040;
@@ -12,14 +14,12 @@
 }
 
 .header .col-4{
-  
     display: flex;
     justify-content: center;
     justify-items: center;
 }
 
 .col-6{
-    
     padding: 100px;
     color: #34283d;
 }
@@ -55,7 +55,6 @@
     margin-top: 20px;
 }
 .judul3{
-   
     color: #34283d;
     text-align:justify;
 }
@@ -64,6 +63,7 @@
     padding: 45px;
      background-color: #240040;
      color: white;
+     margin-bottom: -30px; 
  }
  .col-3{
      margin-top: 20px;
@@ -79,3 +79,4 @@
     margin-left: auto; 
     margin-right: auto;
 }
+

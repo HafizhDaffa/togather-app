@@ -17,6 +17,18 @@
     <div class="container">
     <div class="row">
         <div class="col-md-12 p-5">
+
+        <div class="col-md-4 bawah">
+            <form action="/search" method="get">
+                <div class="input-group custom-search-form">
+                    <input style ="font-size: 15pt" type="search" name="search" class="form-control" placeholder="search here...">
+                    <span class="input-group-btn">
+                        <button style ="font-size: 15pt" type="submit" class="btn btn-primary">Search</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+
         <?php foreach ($user as $user) : ?>
                 <div class="card border-0">
                     <div class="card-body">
@@ -37,11 +49,9 @@
     <div class ="container2">
         <div class="container">
                 <div class="row">
-                    <div class="col-12 center">
+                    <div class="col-12 ">
                         <img src="aset/logo2.png" width="180" height="60" class="logo">
                     </div>
                 </div>
         </div>
     </div>
-
-?>

@@ -29,14 +29,11 @@
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Jenis Kelompok</label>
-                                <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="jenis">
-                                        <option value="">Pilih jenis kelompok</option>
-                                        <option value="Proyek">Proyek</option>
-                                        <option value="Perlombaan">Perlombaan</option>
-                                    </select>
-                                    <label class ="tengah" for="floatingSelect">Pilih salah satu jenis kelompok</label>
-                                </div>
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="jenis">
+                                    <option value="">Pilih jenis kelompok</option>
+                                    <option value="Proyek">Proyek</option>
+                                    <option value="Perlombaan">Perlombaan</option>
+                                </select>
                                 @error('jenis')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror
@@ -44,20 +41,17 @@
 
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Bidang</label>
-                                <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kategori">
-                                        <option value="">Pilih bidang keahlian</option>
-                                        <option value="Software Development">Software Development</option>
-                                        <option value="Web Developmet">Web Developmet</option>
-                                        <option value="UI/UX Design">UI/UX Design</option>
-                                        <option value="Karya Tulis">Karya Tulis</option>
-                                        <option value="Game Developmet">Game Developmet</option>
-                                        <option value="Data Mining">Data Mining</option>
-                                        <option value="Keamanan Jaringan">Keamanan Jaringan</option>
-                                        <option value="Lainnya">Lainnya</option>
-                                    </select>
-                                    <label class ="tengah" for="floatingSelect">Pilih salah satu bidang</label>
-                                </div>
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kategori">
+                                    <option value="">Pilih bidang keahlian</option>
+                                    <option value="Software Development">Software Development</option>
+                                    <option value="Web Developmet">Web Developmet</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="Karya Tulis">Karya Tulis</option>
+                                    <option value="Game Developmet">Game Developmet</option>
+                                    <option value="Data Mining">Data Mining</option>
+                                    <option value="Keamanan Jaringan">Keamanan Jaringan</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
                                 @error('kategori')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror

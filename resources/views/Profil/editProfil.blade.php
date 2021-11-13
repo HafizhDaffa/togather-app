@@ -54,9 +54,8 @@
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Bidang Keahlian</label>
-                                <div class="form-floating" id="username" placeholder="">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example" name="keahlian">
+                                <div id="username">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="keahlian">
                                         <option value="">Pilih bidang keahlian</option>
                                         <option value="Software Development"
                                             {{ $user->keahlian == 'Software Development' ? 'selected = selected' : '' }}>
@@ -84,7 +83,6 @@
                                             Lainnya
                                         </option>
                                     </select>
-                                    <label class="tengah" for="floatingSelect">Pilih salah satu bidang</label>
                                 </div>
                                 @error('keahlian')
                                     <div class="text-danger my-2">{{ 'Silahkan isi data dengan benar' }}</div>
@@ -92,7 +90,7 @@
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Jenis Kelamin</label>
-                                <div class="form-floating" id="username" placeholder="">
+                                <div id="username">
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example" name="kelamin">
                                         <option value="">Pilih Jenis Kelamin</option>
@@ -102,9 +100,7 @@
                                         <option value="Perempuan"
                                             {{ $user->kelamin == 'Perempuan' ? 'selected = selected' : '' }}>
                                             Perempuan</option>
-
                                     </select>
-                                    <label class="tengah" for="floatingSelect">Pilih Jenis Kelamin</label>
                                 </div>
                                 @error('kelamin')
                                     <div class="text-danger my-2">{{ 'Silahkan isi data dengan benar' }}</div>
@@ -113,7 +109,7 @@
 
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Program Studi</label>
-                                <div class="form-floating" id="username" placeholder="">
+                                <div id="username">
                                     <select class="form-select" id="floatingSelect"
                                         aria-label="Floating label select example" name="programstudi">
                                         <option value="">Pilih Program Studi</option>
@@ -132,10 +128,7 @@
                                         <option value="Pendidikan Teknologi Informasi"
                                             {{ $user->programstudi == 'Pendidikan Teknologi Informasi' ? 'selected = selected' : '' }}>
                                             Pendidikan Teknologi Informasi</option>
-
                                     </select>
-                                    <label class="tengah" for="floatingSelect">Pilih salah satu Program
-                                        Studi</label>
                                 </div>
                                 @error('programstudi')
                                     <div class="text-danger my-2">{{ 'Silahkan isi data dengan benar' }}</div>

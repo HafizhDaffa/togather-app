@@ -1,4 +1,6 @@
-
+*{
+    /* border-style:solid; */
+}
 .header{
     padding: 70px;
     background: #240040;
@@ -36,15 +38,14 @@ margin-top: 35px;
 .ukuranedit{
     margin-left: 1060px;
 }
-.center {
-    margin-left: 522px;
-}
+
 /* ini footer yaa */
 .container2{
     margin-top: 222px;
     padding: 45px;
      background-color: #240040;
      color: white;
+     margin-bottom: -30px; 
  }
  .col-3{
      margin-top: 20px;
@@ -59,4 +60,7 @@ margin-top: 35px;
     display: block; 
     margin-left: auto; 
     margin-right: auto;
+}
+.bawah{
+    margin-bottom:40px ;
 }

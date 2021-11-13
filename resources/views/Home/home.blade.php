@@ -12,7 +12,7 @@
             </div>
 
             <div class="col-6">
-                <img src="aset/onboard.svg" alt="" width="700" height="450" class="d-inline-block align-text-top">
+                <img src="aset/onboard.svg" alt="" width="688" height="450" class="d-inline-block align-text-top">
             </div>  
         </div> 
 
@@ -29,9 +29,6 @@
                     <div class="col-md-12 text-center py-3">
                                 <a class="btn px-4 border-0" href="{{ url('/kategori') }}" role="button">Kategori</a>
                             </div>
-                    <!-- <div class="d-grid gap-2 col-4 mx-auto"> 
-                        <a class="btn btn-primary px-4" href="{{ url('/kategori') }}" role="button">Kategori</a>
-                    </div> -->
                     </div>
                 </div>    
             </div>    
@@ -44,9 +41,6 @@
                     <div class="col-md-12 text-center py-3">
                                 <a class="btn px-4 border-0" href="{{ url('/lowongan') }}" role="button">Buat Lowongan</a>
                             </div>
-                    <!-- <div class="d-grid gap-2 col-4 mx-auto"> 
-                        <a class="btn btn-primary px-4" href="{{ url('/') }}" role="button">Buat</a>
-                    </div> -->
                     </div>
                 </div>    
             </div>    
@@ -59,9 +53,6 @@
                          <div class="col-md-12 text-center py-3">
                                 <a class="btn px-4 border-0" href="{{ url('/profil') }}" role="button">Profil</a>
                             </div>
-                    <!-- <div class="d-grid gap-2 col-4 mx-auto"> 
-                        <a class="btn btn-primary px-4" href="{{ url('/') }}" role="button">Profil</a>
-                    </div> -->
                     </div>
                 </div>    
             </div>                     
@@ -83,10 +74,8 @@
 <!-- ini footer yaaa -->
 <div class ="container2">
     <div class="container">
-            <div class="">
-                <div class="col-12">
-                    <img src="aset/logo2.png" width="180" height="60" class="logo">
-            </div>
+        <div class="col-12">
+            <img src="aset/logo2.png" width="180" height="60" class="logo">
         </div>
     </div>
 </div>

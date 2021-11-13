@@ -14,7 +14,6 @@
                 </div>
             </div>
         </div>
-        
                     <div class="container">
                         <div class="col join">
                             <a class="btn btn-primary" href="{{ url('/pengguna') }}" role="button">Daftar Pengguna</a>
@@ -118,5 +117,3 @@
                 </div>
         </div>
     </div>
-
-?>

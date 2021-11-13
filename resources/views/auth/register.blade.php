@@ -48,34 +48,28 @@
                             </div>
                             <div class="form-group pb-3">
                                 <label for="exampleInputPassword1">Bidang Keahlian</label>
-                                <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="keahlian">
-                                        <option value="">Pilih bidang keahlian</option>
-                                        <option value="Software Development">Software Development</option>
-                                        <option value="Web Development">Web Development</option>
-                                        <option value="UI/UX Design">UI/UX Design</option>
-                                        <option value="Karya Tulis">Karya Tulis</option>
-                                        <option value="Game Development">Game Development</option>
-                                        <option value="Data Mining">Data Mining</option>
-                                        <option value="Keamanan Jaringan">Keamanan Jaringan</option>
-                                        <option value="Lainnya">Lainnya</option>
-                                    </select>
-                                    <label class ="tengah" for="floatingSelect">Pilih salah satu bidang</label>
-                                </div>
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="keahlian">
+                                    <option selected>Pilih bidang keahlian</option>
+                                    <option value="Software Development">Software Development</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="Karya Tulis">Karya Tulis</option>
+                                    <option value="Game Development">Game Development</option>
+                                    <option value="Data Mining">Data Mining</option>
+                                    <option value="Keamanan Jaringan">Keamanan Jaringan</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
                                 @error('keahlian')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror
                             </div>
                             <div class="form-group pb-3">
                             <label for="exampleInputPassword1">Jenis Kelamin</label>
-                                <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kelamin">
-                                        <option value="">Pilih jenis kelamin</option>
-                                        <option value="Laki-laki">Laki-laki</option>
-                                        <option value="Perempuan">Perempuan</option>
-                                    </select>
-                                    <label class ="tengah" for="floatingSelect">Pilih salah satu jenis kelamin</label>
-                                </div>
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kelamin">
+                                    <option value="">Pilih jenis kelamin</option>
+                                    <option value="Laki-laki">Laki-laki</option>
+                                    <option value="Perempuan">Perempuan</option>
+                                </select>
                                 @error('kelamin')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror
@@ -88,19 +82,15 @@
                                 @enderror
                             </div>
                             <div class="form-group pb-3">
-                                <label for="exampleInputPassword1">Program Studi</label>
-                                <div class="form-floating">
-                                    
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="programstudi">
-                                        <option value="">Pilih program studi</option>
-                                        <option value="Teknik Informatika">Teknik Informatika</option>
-                                        <option value="Teknik Komputer">Teknik Komputer</option>
-                                        <option value="Sistem Informasi">Sistem Informasi</option>
-                                        <option value="Teknologi Informasi">Teknologi Informasi</option>
-                                        <option value="Pendidikan Teknologi Informasi">Pendidikan Teknologi Informasi</option>
-                                    </select>
-                                    <label class ="tengah" for="floatingSelect">Pilih salah satu program studi</label>
-                                </div>
+                                <label for="exampleInputPassword1">Program Studi</label>                                    
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="programstudi">
+                                    <option value="">Pilih program studi</option>
+                                    <option value="Teknik Informatika">Teknik Informatika</option>
+                                    <option value="Teknik Komputer">Teknik Komputer</option>
+                                    <option value="Sistem Informasi">Sistem Informasi</option>
+                                    <option value="Teknologi Informasi">Teknologi Informasi</option>
+                                    <option value="Pendidikan Teknologi Informasi">Pendidikan Teknologi Informasi</option>
+                                </select>
                                 @error('programstudi')
                                     <div class="text-danger my-2">{{ "Silahkan isi data dengan benar" }}</div>
                                 @enderror

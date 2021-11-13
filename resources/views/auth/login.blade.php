@@ -49,7 +49,6 @@
         </div>
     </div>
 </section>
-
 <!-- ini footer yakk -->
 <div class="container2">
     <div class="container">

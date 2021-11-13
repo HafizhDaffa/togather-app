@@ -49,4 +49,13 @@ class profilController extends Controller
         $user = User::all();
         return view('Pengguna.pengguna', ['user'=> $user]);
     }
+
+    public function search(Request $request){
+        $search = User::where('nama','like',"%".$request->search."%")
+                ->orWhere('keahlian','like',"%".$request->search."%")
+                ->orWhere('kelamin','like',"%".$request->search."%")
+                ->orWhere('telepon','like',"%".$request->search."%")
+                ->paginate(2);
+        return view('Pengguna.pengguna', ['user'=>$search]);
+    }
 }
