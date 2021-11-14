@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <div class="judul">TO-GATHER</div> <br> <h4> Sistem pencari teman kelompok berbasis website. Dengan To-gather mahasiswa akan
+                <div class="judul">TO-GATHER</div> <br> <h4> Sistem pencari teman kelompok berbasis website. Dengan TO-GATHER mahasiswa akan
                     mendapatkan kemudahan dalam mencari sebuah tim dalam melakukan sebuah proyek atau lomba yang akan diikuti nantinya. </h4>
             </div>
 
@@ -64,10 +64,10 @@
                 <img src="aset/kelompok.jpg" alt="" width="620" height="400" class="d-inline-block align-text-top">
             </div>
             <div class="col-6">
-                <h5 class = "judul3"> 
-                    To-gather adalah sebuah website yang dapat digunakan oleh Mahasiswa FILKOM  UB untuk mengunggah informasi terkati ketersediaan lowongan 
-                    anggota pada suatu kelompok. To-gather berisikan lowongan kelompok yang tersedia, persyaratan kelompok, dan kontak yang dapat dihubungi
-                    untuk bergabung bersama kelompok yang sesuai dengan bidang keminatan mahasiswa. </h5>
+                <h4 class = "judul3"> 
+                    TO-GATHER adalah sebuah website yang dapat digunakan oleh Mahasiswa FILKOM  UB untuk mengunggah informasi terkait ketersediaan lowongan 
+                    anggota pada suatu kelompok. TO-GATHER berisikan lowongan kelompok yang tersedia, persyaratan kelompok, dan kontak yang dapat dihubungi
+                    untuk bergabung bersama kelompok yang sesuai dengan bidang keminatan mahasiswa. </h4>
             </div>
         </div> 
     </div> 
