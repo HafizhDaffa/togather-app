@@ -2,6 +2,7 @@
 
 <title>Home</title>
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+<link rel="shortcut icon" href="{{ URL::to('/aset/logo.png') }}" />
 <section class="py-5 container">
    
     <div class="container">

@@ -2,7 +2,7 @@
 
     <title>Daftar Pengguna</title>
 
-    <link rel="stylesheet" href="{{ asset('css/lowongan2.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/pengguna.css') }}">
     <link rel="shortcut icon" href="{{ URL::to('/aset/logo.png') }}" />
     <section class="py-5 container-fluid">
     <div class="row">

@@ -2,6 +2,7 @@
 
 <title>Lis Kelompok</title>
 <link rel="stylesheet" href="{{ asset('css/lis.css') }}">
+<link rel="shortcut icon" href="{{ URL::to('/aset/logo.png') }}" />
 <section class="py-5 container-fluid">
     <div class="row">
         <div class="header">
@@ -24,7 +25,6 @@
                         <div class="card-body jarak">
                             <h3 class="card-title">{{ $kelompok->judul }}</h3>
                             <p class="card-text">{{ $kelompok->jenis }}</p>
-                            <p class="card-text">{{ $kelompok->kategori }}</p>
                             <a href="{{ url('/kelompok/'.$kelompok->id) }}" class="btn btn-primary">Buka Kelompok</a>
                         </div>
                     @empty

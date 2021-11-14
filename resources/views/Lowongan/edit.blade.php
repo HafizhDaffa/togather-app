@@ -2,6 +2,7 @@
 
 <title>Edit Lowongan</title>
 <link rel="stylesheet" href="{{ asset('css/lowongan.css') }}">
+<link rel="shortcut icon" href="{{ URL::to('/aset/logo.png') }}" />
 <section class="py-5 container-fluid">
     <div class="row">
         <div class="header">

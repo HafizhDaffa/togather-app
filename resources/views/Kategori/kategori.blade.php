@@ -2,6 +2,7 @@
 
 <title>Kategori</title>
 <link rel="stylesheet" href="{{ asset('css/kategori.css') }}">
+<link rel="shortcut icon" href="{{ URL::to('/aset/logo.png') }}" />
 <section class="py-5 container-fluid">
     <div class="row">
         <div class="header">

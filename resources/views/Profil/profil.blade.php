@@ -2,7 +2,7 @@
 
     <title>Profil</title>
 
-    <link rel="stylesheet" href="{{ asset('css/kelompok.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/profil.css') }}">
     <link rel="shortcut icon" href="{{ URL::to('/aset/logo.png') }}" />
     <section class="py-5 container-fluid">
     <div class="row">
@@ -16,7 +16,7 @@
         </div>
                     <div class="container">
                         <div class="col join">
-                            <a class="btn btn-primary" href="{{ url('/pengguna') }}" role="button">Daftar Pengguna</a>
+                            <a class="btn pengguna" href="{{ url('/pengguna') }}" role="button"><h4>Daftar Pengguna</h4></a>
                         </div>
                         <div class="row justify-content-sm-center">
                             <div class="col-sm-8">
