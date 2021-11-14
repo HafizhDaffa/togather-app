@@ -75,6 +75,7 @@ class lowonganController extends Controller
         $form_lowongan->kategori = $request->kategori;
         $form_lowongan->jumlahAnggota = $request->jumlahAnggota;
         $form_lowongan->linkKelompok = $request->linkKelompok;
+        $form_lowongan->user_id = auth()->user()->id;
 
         $form_lowongan->save();
 
@@ -83,7 +84,7 @@ class lowonganController extends Controller
 
     public function test()
     {
-        $lowongan = formLowongan::all();
+        $lowongan = formLowongan::all()->where('user_id', auth()->user()->id);
         if ($lowongan->isEmpty()) {
             return view('Lowongan.lowongan');
         } else {
@@ -120,6 +121,6 @@ class lowonganController extends Controller
     public function tampilkan_kelompok($id)
     {
         $kelompok = formLowongan::find($id);
-        return view('Kelompok.kelompok',["kelompok"=>$kelompok]);
+        return view('Kelompok.kelompok', ["kelompok" => $kelompok]);
     }
 }
