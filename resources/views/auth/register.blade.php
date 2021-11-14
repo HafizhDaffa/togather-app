@@ -103,7 +103,7 @@
                                 @enderror
                             </div>
                             <div class="signup pb-3">
-                                <div>Sudah punya akun? <a href="{{ url('/') }}">Login disini</a></div>
+                                <div>Sudah punya akun? <a href="{{ url('/') }}"><b>Login disini<b></a></div>
                             </div>
                             <div class="col-md-12 text-center py-3">
                                 <button class="btn btn-primary btn-light px-4">Daftar</button>

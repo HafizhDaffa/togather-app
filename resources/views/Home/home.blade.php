@@ -39,7 +39,7 @@
                     <h5 class="card-title">Buat Lowongan</h5>
                     <p class="card-text"> Buatlah kelompok dengan membuka lowongan untuk mencari anggota kelompok yang kalian inginkan.</p>
                     <div class="col-md-12 text-center py-3">
-                                <a class="btn px-4 border-0" href="{{ url('/lowongan') }}" role="button">Buat Lowongan</a>
+                                <a class="btn px-4 border-0" href="{{ url('/cabanglowongan') }}" role="button">Buat Lowongan</a>
                             </div>
                     </div>
                 </div>    

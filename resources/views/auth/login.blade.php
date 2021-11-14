@@ -21,7 +21,7 @@
                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="Enter email" name="email">
                                 @error('email')
-                                    <div class="text-danger my-2">{{ 'silahkan mengisi email dan password anda' }}</div>
+                                    <div class="text-danger my-2">{{ 'Silahkan mengisi email dan password anda secara benar' }}</div>
                                 @enderror
                             </div>
 
@@ -30,7 +30,7 @@
                                 <input type="password" class="form-control" id="exampleInputPassword1"
                                     placeholder="Password" name="password">
                                 @error('password')
-                                    <div class="text-danger my-2">{{ 'silahkan mengisi email dan password anda' }}</div>
+                                    <div class="text-danger my-2">{{ 'Silahkan mengisi email dan password anda secara benar' }}</div>
                                 @enderror
                             </div>
                             <div class="signup pb-3">

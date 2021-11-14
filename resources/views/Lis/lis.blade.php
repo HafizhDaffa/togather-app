@@ -28,7 +28,7 @@
                             <a href="{{ url('/kelompok/'.$kelompok->id) }}" class="btn btn-primary">Buka Kelompok</a>
                         </div>
                     @empty
-                        <h3 class="text-center text-dark font-sm h3 py-4">Tidak ada data</h3>
+                        <h3 class="text-center text-dark font-sm h3 py-4">Tidak ada  kelompok pada kategori ini</h3>
                     @endforelse
                 </div>
             </div>
