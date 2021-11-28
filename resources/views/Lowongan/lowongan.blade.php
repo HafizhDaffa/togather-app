@@ -44,10 +44,10 @@
                                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kategori">
                                     <option value="">Pilih bidang keahlian</option>
                                     <option value="Software Development">Software Development</option>
-                                    <option value="Web Developmet">Web Developmet</option>
+                                    <option value="Web Development">Web Development</option>
                                     <option value="UI/UX Design">UI/UX Design</option>
                                     <option value="Karya Tulis">Karya Tulis</option>
-                                    <option value="Game Developmet">Game Developmet</option>
+                                    <option value="Game Development">Game Development</option>
                                     <option value="Data Mining">Data Mining</option>
                                     <option value="Keamanan Jaringan">Keamanan Jaringan</option>
                                     <option value="Lainnya">Lainnya</option>

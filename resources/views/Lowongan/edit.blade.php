@@ -44,10 +44,10 @@
                                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="kategori">
                                     <option value="">Pilih bidang keahlian</option>
                                     <option value="Software Development" {{ $form_lowongan->kategori== "Software Development"  ? 'selected = true' : '' }}>Software Development</option>
-                                    <option value="Web Developmet"{{ $form_lowongan->kategori== "Web Developmet"  ? 'selected = selected' : '' }}>Web Developmet</option>
+                                    <option value="Web Development"{{ $form_lowongan->kategori== "Web Development"  ? 'selected = selected' : '' }}>Web Developmet</option>
                                     <option value="UI/UX Design"{{ $form_lowongan->kategori== "UI/UX Design"  ? 'selected = selected' : '' }}>UI/UX Design</option>
                                     <option value="Karya Tulis"{{ $form_lowongan->kategori== "Karya Tulis"  ? 'selected = selected' : '' }}>Karya Tulis</option>
-                                    <option value="Game Developmet"{{ $form_lowongan->kategori== "Game Developmet"  ? 'selected = selected' : '' }}>Game Developmet</option>
+                                    <option value="Game Development"{{ $form_lowongan->kategori== "Game Development"  ? 'selected = selected' : '' }}>Game Developmet</option>
                                     <option value="Data Mining"{{ $form_lowongan->kategori== "Data Mining" ? 'selected = selected' : '' }}>Data Mining</option>
                                     <option value="Keamanan Jaringan"{{ $form_lowongan->kategori== "Keamanan Jaringan" ? 'selected = selected' : '' }}>Keamanan Jaringan</option>
                                     <option value="Lainnya"{{ $form_lowongan->kategori== "Lainnya"  ? 'selected = selected' : '' }}>Lainnya</option>
